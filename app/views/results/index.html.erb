@@ -1,37 +1,33 @@
-
-
 <div class="jumbotron" style="background-color: #F9F9F9" >
 	<div class="container">
-	
-	 	<%= form_tag("/results", method: :post) do %>
+
+		<%= form_tag("/results", method: :post) do %>
 			<div class='fname' style="color: #808782">
 				
 	  		Enter your first name?
-
-	  	<%= form_tag("/results", method: :post) do %>
+			</div>
+		<% end %>
+		<%= form_tag("/results", method: :post) do %>
 			<div class='lname' style="color: #808782">
 				
 	  		Enter your last name?
-
-
+	  		</div>
+	  	<% end %>
 	  	<%= form_tag("/results", method: :post) do %>
 			<div class='phonenum' style="color: #808782">
 				
 	  		Enter your phone number?
-
-
+	  		</div>
+	  	<% end %>
 	  	<%= form_tag("/results", method: :post) do %>
 			<div class='email' style="color: #808782">
 				
 	  		Enter your email?
-
-	  	
 			</div>
-
+		<% end %>
 			<div class="submit">
-				<%= submit_tag 'Submit', class: 'btn btn-default', :style => 'float: right;' %>
+		<%= submit_tag 'Submit', class: 'btn btn-default', :style => 'float: right;' %>	
+		
 			</div>
-
-  		<% end %>
-  	</div>
+	</div>
 </div>
